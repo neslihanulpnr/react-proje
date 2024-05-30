@@ -19,7 +19,7 @@ function Apı() {
       {
         products?.map((product) => { //products diziyi döngüye alıyor ? tanımlımı diye bakıyo
           return <div key={product.id}>
-            <p><img className='img' src={product.image} alt='product.title' /></p>
+            <p><img className='img' src={product.image}/></p>
             <h2>{product.title}</h2>
             <button onClick={() => navigate("/product-details/" + product.id)}>detayına git</button>
             <br/><br/><br/>
